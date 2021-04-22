@@ -31,7 +31,6 @@ export class SignUpController implements Controller {
         email,
         password
       })
-      return badRequest(new InvalidParamError('Something wrong'))
     } catch (error) {
       return serverError()
     }
